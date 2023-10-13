@@ -10,7 +10,7 @@ import org.springframework.beans.BeanWrapperImpl;
 
 public class Utils {
     
-    //Merge values for partial update
+    //Merge non null values for partial update
     public static void CopyNonNullProperties(Object source, Object target) {
         BeanUtils.copyProperties(source, target, getNullPropertyNames(source));
     }
